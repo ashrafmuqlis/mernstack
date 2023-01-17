@@ -1,5 +1,4 @@
 echo "Creating server.js file"
-sudo touch server.js
 sudo echo "
 const express = require(\"express\");
 const app = express();
@@ -28,7 +27,6 @@ PORT=5000" > config.env
 
 echo "Creating conn.js file (MongoDB Connection)"
 sudo mkdir db
-sudo touch db/conn.js
 sudo echo "
 const { MongoClient } = require(\"mongodb\");
 const Db = process.env.MONGODB_LOCAL;
@@ -59,7 +57,6 @@ module.exports = {
 
 echo "Creating Server API Endpoints"
 sudo mkdir routes
-sudo touch routes/record.js
 sudo echo "
 const express = require(\"express\");
  

@@ -36,7 +36,7 @@ echo "Creating React Client (Frontend) Environtment"
 sudo npx create-react-app client
 
 echo "Creating React Server (Backend) Environtment"
-mkdir server
+sudo mkdir server
 cd server
 sudo npm init -y
 sudo npm install mongodb express cors dotenv

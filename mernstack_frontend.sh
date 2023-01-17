@@ -167,7 +167,7 @@ export default function Edit() {
  
      const record = await response.json();
      if (!record) {
-       window.alert(`Record with id \${id} not found`);
+       window.alert(\`Record with id \${id} not found\`);
        navigate(\"/\");
        return;
      }
@@ -200,7 +200,7 @@ export default function Edit() {
      method: \"POST\",
      body: JSON.stringify(editedPerson),
      headers: {
-       \'Content-Type\': \'application/json\'
+       'Content-Type': 'application/json'
      },
    });
  

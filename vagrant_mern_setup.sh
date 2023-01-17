@@ -42,6 +42,7 @@ sudo npm init -y
 sudo npm install mongodb express cors dotenv
 
 echo "Creating server.js file"
+sudo touch server.js
 sudo echo "
 const express = require(\"express\");
 const app = express();
@@ -101,7 +102,7 @@ module.exports = {
 
 echo "Creating Server API Endpoints"
 sudo mkdir routes
-touch routes/record.js
+sudo touch routes/record.js
 sudo echo "
 const express = require(\"express\");
  
@@ -189,4 +190,3 @@ recordRoutes.route(\"/:id\").delete((req, response) => {
 module.exports = recordRoutes;" > routes/record.js
 
 sudo node server.js
-

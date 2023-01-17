@@ -140,7 +140,7 @@ export default function Create() {
 }" > src/components/create.js
 
 echo "Creating Components - edit.js"
-sudo echo"
+sudo echo "
 import React, { useState, useEffect } from \"react\";
 import { useParams, useNavigate } from \"react-router\";
  

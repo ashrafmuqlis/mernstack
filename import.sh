@@ -115,7 +115,7 @@ recordRoutes.route(\"/update/:id\").post(function (req, response) {
  let db_connect = dbo.getDb();
  let myquery = { _id: ObjectId(req.params.id) };
  let newvalues = {
-   $set: {
+   \$set: {
      name: req.body.name,
      position: req.body.position,
      level: req.body.level,

@@ -30,7 +30,7 @@ sudo curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 
 sudo mkdir MERN
-sudo cd MERN
+cd MERN
 
 echo "Creating React Client (Frontend) Environtment"
 sudo npx create-react-app client
